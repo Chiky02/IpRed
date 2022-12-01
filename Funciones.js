@@ -5,7 +5,7 @@ document.getElementById("buscar").addEventListener("click",buscar,false);
 function buscar() {
     var busqueda = document.getElementById("busqueda").value;
     document.getElementById("busqueda").value = "";
-    alert("Se va a realizar una accion de busqueda del documento " + busqueda);
+    alert("Se va a realizar una accion de busqueda del documento mi perro " + busqueda);
     ajax(busqueda);
 }
 
@@ -31,7 +31,7 @@ alert(busqueda);
         // código a ejecutar si la petición es satisfactoria;
 
         beforeSend: function () {
-            console.log("cargando...");
+            console.log("cargando... no se desespere");
         },
         success: function (json) {
   
